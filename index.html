@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="李柯凝的个人项目网站" />
+  <title>李柯凝 · 个人项目</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="#top">李柯凝</a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#about">关于</a>
+      <a href="#projects">项目</a>
+      <a href="#contact">联系</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-label="打开菜单" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="hero-label">欢迎来访</p>
+      <h1 class="hero-title">
+        你好，我是<br />
+        <em>李柯凝</em>
+      </h1>
+      <p class="hero-desc">
+        这里记录我的学习与创作。用简单的页面，承载想法与成长。
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">查看项目</a>
+        <a class="btn btn-ghost" href="#contact">联系我</a>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <span>向下滚动</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-inner">
+        <h2 class="section-title">关于我</h2>
+        <div class="about-grid">
+          <p class="about-lead">
+            热爱探索新事物，喜欢在实践中把想法变成可见的成果。
+          </p>
+          <ul class="about-tags">
+            <li>学习笔记</li>
+            <li>小项目实践</li>
+            <li>创意记录</li>
+            <li>持续成长</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="section-inner">
+        <h2 class="section-title">项目展示</h2>
+        <p class="section-sub">以下是可以逐步充实的内容区块</p>
+        <div class="project-grid">
+          <article class="project-card">
+            <span class="project-num">01</span>
+            <h3>学习笔记</h3>
+            <p>整理课程与阅读心得，形成可回顾的知识卡片。</p>
+            <a href="#" class="project-link">了解更多 →</a>
+          </article>
+          <article class="project-card">
+            <span class="project-num">02</span>
+            <h3>创意实验</h3>
+            <p>尝试设计与编程的小作品，记录从草图到成品的历程。</p>
+            <a href="#" class="project-link">了解更多 →</a>
+          </article>
+          <article class="project-card">
+            <span class="project-num">03</span>
+            <h3>生活记录</h3>
+            <p>用图文留住值得记住的瞬间与思考片段。</p>
+            <a href="#" class="project-link">了解更多 →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-inner contact-inner">
+        <h2 class="section-title">保持联系</h2>
+        <p class="contact-text">有想法或合作意向？欢迎通过下方方式联系。</p>
+        <a class="contact-email" href="mailto:hello@example.com">hello@example.com</a>
+        <div class="social-links">
+          <a href="#" aria-label="GitHub">GitHub</a>
+          <a href="#" aria-label="微博">微博</a>
+          <a href="#" aria-label="微信">微信</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> 李柯凝 · 用心记录每一天</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
